@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <br.com.redcode.revealpassword.library.UiCampoSenha
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Sample on XML (only)" />
+
+    <br.com.redcode.revealpassword.library.EditTextWithImageForRevealPassword
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hint="Custom Hint Hardcoded" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Sample on XML with Kotlin changing icon" />
+
+    <br.com.redcode.revealpassword.library.EditTextWithImageForRevealPassword
+        android:id="@+id/editTextWithImageForRevealPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:hint="Custom Hint Hardcoded" />
 
 </LinearLayout>

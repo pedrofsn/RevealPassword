@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
-    <declare-styleable name="UICampoSenha">
+    <declare-styleable name="EditTextWithImageForRevealPassword">
         <attr name="hint" format="string" />
     </declare-styleable>
 </resources>

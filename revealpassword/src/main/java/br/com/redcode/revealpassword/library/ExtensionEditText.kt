@@ -7,12 +7,12 @@ import android.widget.EditText
  * Created by pedrofsn on 17/10/2017.
  */
 
-fun EditText.alterarVisibilidadeSenha(): Boolean {
+fun EditText.showOrHidePassword(): Boolean {
     if (transformationMethod == null) {
-        setTransformationMethod(PasswordTransformationMethod())
+        transformationMethod = PasswordTransformationMethod()
         return true
     } else {
-        setTransformationMethod(null)
+        transformationMethod = null
         return false
     }
 }
