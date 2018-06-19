@@ -1,7 +1,9 @@
 package br.com.redcode.revealpassword.library
 
 import android.content.Context
+import android.graphics.drawable.Drawable
 import android.support.annotation.DrawableRes
+import android.support.v4.content.ContextCompat
 import android.support.v7.widget.AppCompatImageView
 import android.util.AttributeSet
 import android.widget.EditText
@@ -18,7 +20,9 @@ class EditTextWithImageForRevealPassword : FrameLayout {
     lateinit var editTextPassword: EditText
 
     private var isPasswordVisible: Boolean = false
+
     private var editTextHint: String? = null
+    private var drawableRevealPassword: Drawable? = null
 
     constructor(context: Context) : super(context) {
         initialize()
@@ -38,6 +42,7 @@ class EditTextWithImageForRevealPassword : FrameLayout {
         val typedArray = context.obtainStyledAttributes(attrs, R.styleable.EditTextWithImageForRevealPassword, 0, 0)
         try {
             editTextHint = typedArray.getString(R.styleable.EditTextWithImageForRevealPassword_hint) ?: context.getString(R.string.password)
+            drawableRevealPassword = typedArray.getDrawable(R.styleable.EditTextWithImageForRevealPassword_drawableRevealPassword) ?: ContextCompat.getDrawable(context, android.R.drawable.ic_lock_lock)
         } finally {
             typedArray.recycle()
         }
@@ -56,11 +61,16 @@ class EditTextWithImageForRevealPassword : FrameLayout {
 
     private fun populate() {
         changeHint(editTextHint)
+        changeIcon(drawableRevealPassword)
         imageViewVisualizePassword.setOnClickListener { isPasswordVisible = editTextPassword.showOrHidePassword() }
     }
 
     fun changeHint(label: String?) {
         label?.let { editTextPassword.hint = label }
+    }
+
+    fun changeIcon(drawable: Drawable?) {
+        drawable?.let { imageViewVisualizePassword.setBackgroundDrawable(drawable) }
     }
 
     fun changeIcon(@DrawableRes icon: Int?) {

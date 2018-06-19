@@ -11,5 +11,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         editTextWithImageForRevealPassword.changeIcon(android.R.drawable.ic_delete)
+        editTextWithImageForRevealPassword.changeHint(getString(R.string.app_name))
     }
 }

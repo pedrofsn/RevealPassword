@@ -2,5 +2,6 @@
 <resources>
     <declare-styleable name="EditTextWithImageForRevealPassword">
         <attr name="hint" format="string" />
+        <attr name="drawableRevealPassword" format="integer" />
     </declare-styleable>
 </resources>

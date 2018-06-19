@@ -5,29 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sample on XML (only)" />
+        android:text="Default" />
 
     <br.com.redcode.revealpassword.library.EditTextWithImageForRevealPassword
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Custom from XML (only)" />
+
+    <br.com.redcode.revealpassword.library.EditTextWithImageForRevealPassword
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:drawableRevealPassword="@android:drawable/ic_menu_add"
         app:hint="Custom Hint Hardcoded" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Sample on XML with Kotlin changing icon" />
+        android:text="Sample on XML with Kotlin changing icon and label" />
 
     <br.com.redcode.revealpassword.library.EditTextWithImageForRevealPassword
         android:id="@+id/editTextWithImageForRevealPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        app:hint="Custom Hint Hardcoded" />
+        android:layout_marginTop="10dp" />
 
 </LinearLayout>
