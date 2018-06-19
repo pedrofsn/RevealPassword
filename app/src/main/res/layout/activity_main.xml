@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Default" />
+        android:text="Default UI component from library" />
 
     <br.com.redcode.revealpassword.library.EditTextWithImageForRevealPassword
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Custom from XML (only)" />
+        android:text="UI component customized in XML (no kotlin/java references)" />
 
     <br.com.redcode.revealpassword.library.EditTextWithImageForRevealPassword
         android:layout_width="match_parent"
@@ -34,12 +34,32 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Sample on XML with Kotlin changing icon and label" />
+        android:text="Custom with Kotlin" />
 
     <br.com.redcode.revealpassword.library.EditTextWithImageForRevealPassword
         android:id="@+id/editTextWithImageForRevealPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Just using the function from library" />
+
+    <EditText
+        android:id="@+id/editTextSampleFunction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="textWebPassword"
+        android:text="\@pedrofsn" />
+
+    <Button
+        android:id="@+id/buttonShowHidePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show/hide password" />
 
 </LinearLayout>
