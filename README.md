@@ -36,7 +36,12 @@ Using XML and JAVA/Kotlin:
 ``` 
  buttonShowHidePassword.setOnClickListener { editTextSampleFunction.showOrHidePassword() }
  ```
-
+ 
 You can see more samples in [XML](https://github.com/pedrofsn/RevealPassword/blob/master/app/src/main/res/layout/activity_main.xml) and [Java/Kotlin](https://github.com/pedrofsn/RevealPassword/blob/master/app/src/main/java/br/com/redcode/revealpassword/sample/MainActivity.kt).
+
+### Sample printscreen:
+![Sample printscreen](https://github.com/pedrofsn/RevealPassword/raw/master/sample_printscreen.png)
+
+
 
 Attention: If you're using [TextInputLayout from Material Components](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/TextInputLayout.java). You can use [builtin solution](https://material.io/develop/android/components/text-input-layout/#common-features) for this problem domain.
