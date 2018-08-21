@@ -10,7 +10,7 @@ implementation 'com.github.pedrofsn:RevealPassword:1.0.2'
 # How to use
 Using only XML:
 ``` 
-<br.com.redcode.revealpassword.library.EditTextWithImageForRevealPassword
+    <br.com.redcode.revealpassword.library.EditTextWithImageForRevealPassword
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:drawableRevealPassword="@android:drawable/ic_menu_add"
