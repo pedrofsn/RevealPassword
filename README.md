@@ -1,5 +1,11 @@
-# RevealPassword
+# RevealPassword [![](https://www.jitpack.io/v/pedrofsn/RevealPassword.svg)](https://www.jitpack.io/#pedrofsn/RevealPassword)
 An android small library to show and hide password in a EditText.
+
+# Download
+Download the latest version in [JitPack](https://www.jitpack.io/#pedrofsn/RevealPassword/) or Gradle bellow
+```
+implementation 'com.github.pedrofsn:RevealPassword:1.0.2'
+```
 
 # How to use
 Using only XML:
